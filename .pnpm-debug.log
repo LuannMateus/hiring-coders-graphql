@@ -1,0 +1,69 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 debug pnpm:package-manifest": {
+    "initial": {
+      "name": "@dev-demands/root",
+      "version": "1.0.0",
+      "description": "",
+      "main": "index.js",
+      "dependencies": {
+        "esm": "^3.2.25"
+      },
+      "devDependencies": {},
+      "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+      },
+      "author": "",
+      "license": "MIT"
+    },
+    "prefix": "/home/luan/Documents/DevExercises/hiring_coders/graphQL"
+  },
+  "2 debug pnpm:context": {
+    "currentLockfileExists": false,
+    "storeDir": "/home/luan/.pnpm-store/v3",
+    "virtualStoreDir": "/home/luan/Documents/DevExercises/hiring_coders/graphQL/node_modules/.pnpm"
+  },
+  "3 debug pnpm:stage": {
+    "prefix": "/home/luan/Documents/DevExercises/hiring_coders/graphQL",
+    "stage": "resolution_started"
+  },
+  "4 debug pnpm:_dependency_resolved": {
+    "resolution": "registry.npmjs.org/esm/3.2.25",
+    "wanted": {
+      "dependentId": ".",
+      "name": "esm",
+      "rawSpec": "^3.2.25"
+    }
+  },
+  "5 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esm/3.2.25",
+    "requester": "/home/luan/Documents/DevExercises/hiring_coders/graphQL",
+    "status": "resolved"
+  },
+  "6 debug pnpm:progress": {
+    "packageId": "registry.npmjs.org/esm/3.2.25",
+    "requester": "/home/luan/Documents/DevExercises/hiring_coders/graphQL",
+    "status": "found_in_store"
+  },
+  "7 error pnpm": {
+    "code": "ERR_PNPM_FETCH_404",
+    "hint": "@dev-demands/server is not in the npm registry, or you have no permission to fetch it.\n\nNo authorization header was set for the request.",
+    "request": {
+      "url": "https://registry.npmjs.org/@dev-demands%2Fserver"
+    },
+    "response": {
+      "size": 0,
+      "timeout": 60000
+    },
+    "pkgName": "@dev-demands/server",
+    "pkgsStack": [],
+    "err": {
+      "name": "Error",
+      "message": "GET https://registry.npmjs.org/@dev-demands%2Fserver: Not Found - 404",
+      "code": "ERR_PNPM_FETCH_404",
+      "stack": "Error: GET https://registry.npmjs.org/@dev-demands%2Fserver: Not Found - 404\n    at RetryOperation._fn (/home/luan/.npm/_npx/e6e0ed1aca658cae/node_modules/pnpm/dist/pnpm.cjs:81264:18)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"
+    }
+  }
+}

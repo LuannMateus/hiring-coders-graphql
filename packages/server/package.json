@@ -1,0 +1,30 @@
+{
+  "name": "@dev-demands/server",
+  "version": "1.0.0",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -r esm .",
+    "start": "node -r esm ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.12"
+  },
+  "description": "",
+  "dependencies": {
+    "apollo-server-express": "^3.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "graphql": "^15.5.1",
+    "uuid": "^8.3.2"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "src/data/*"
+    ]
+  }
+}
